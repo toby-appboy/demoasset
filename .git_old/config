@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[branch "gonative-release"]
+[remote "gonative"]
+	url = https://git.gonative.io/git/gonative-ios.git
+	fetch = +refs/heads/gonative-release:refs/remotes/gonative/gonative-release
+	pushurl = push_access_is_disabled
+[branch "gonative-release"]
+	remote = gonative
+	merge = refs/heads/gonative-release

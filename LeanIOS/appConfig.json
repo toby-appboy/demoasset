@@ -1,0 +1,239 @@
+{
+  "services": {
+    "parse": {
+      "pushEnabled": false,
+      "active": false
+    },
+    "facebook": {
+      "active": false
+    },
+    "oneSignal": {
+      "notificationExtension": false,
+      "active": false
+    },
+    "registration": {
+      "endpoints": [
+        {
+          "dataType": [
+            "parse",
+            "oneSignal"
+          ],
+          "urlRegex": null,
+          "url": null
+        }
+      ],
+      "active": false
+    },
+    "analytics": {
+      "active": false
+    },
+    "push": {
+      "active": false
+    }
+  },
+  "performance": {
+    "webviewPools": [
+      {
+        "urls": [
+          {
+            "disown": "reload"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "usesGeolocation": true,
+    "androidDownloadToPublicStorage": false,
+    "enableWebRTC": false
+  },
+  "forms": {
+    "signupConfig": {
+      "active": false,
+      "formSelector": null,
+      "formInputs": []
+    },
+    "loginConfig": {
+      "formSelector": null,
+      "loginIsFirstPage": false,
+      "formInputs": []
+    },
+    "interceptForms": {
+      "forms": []
+    }
+  },
+  "styling": {
+    "icon": "images/logo1_white_padded.png",
+    "iosHeaderImage": "images/logo1.png",
+    "showActionBar": false,
+    "showNavigationBar": false,
+    "iosSidebarFont": "Default",
+    "androidHideTitleInActionBar": false,
+    "navigationTitleImage": false,
+    "iosTheme": "light",
+    "androidTheme": "light",
+    "androidSidebarBackgroundColor": "#FFFFFF",
+    "androidSidebarForegroundColor": "#777777",
+    "androidActionBarBackgroundColor": "#bdbdbd",
+    "androidActionBarForegroundColor": "#000000",
+    "androidPullToRefreshColor": "#777777",
+    "androidAccentColor": "#009688",
+    "androidSidebarSeparatorColor": "#585858",
+    "androidTabBarBackgroundColor": "#bdbdbd",
+    "androidTabBarTextColor": "#000000",
+    "androidTabBarIndicatorColor": "#000000",
+    "iosTitleColor": "#333333",
+    "iosTintColor": "#0091fe",
+    "iosSidebarTextColor": "#333333",
+    "androidStatusBarBackgroundColor": "#909090",
+    "hideWebviewAlpha": 0.5,
+    "disableAnimations": false,
+    "androidShowSplash": true,
+    "menuAnimationDuration": 0.15,
+    "transitionInteractiveDelayMax": 0.2
+  },
+  "navigation": {
+    "androidShowRefreshButton": false,
+    "iosShowRefreshButton": false,
+    "deepLinkDomains": [],
+    "navigationLevels": {
+      "levels": [
+        null
+      ]
+    },
+    "toolbarNavigation": null,
+    "ignorePageFinishedRegexes": [],
+    "redirects": [],
+    "navigationTitles": {
+      "titles": [
+        null
+      ]
+    },
+    "regexInternalExternal": {
+      "rules": [
+        {
+          "regex": "^(?!https?://).*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/login.php.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/dialog.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/v1\\.0/.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/oauth.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/v2\\.0/.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/checkpoint.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*plus\\.google\\.com/share.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*twitter\\.com/.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*instagram\\.com/.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://maps\\.google\\.com.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*linkedin\\.com/.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*google\\.com/maps/search/.*",
+          "internal": false
+        },
+        {
+          "regex": ".*",
+          "internal": true
+        }
+      ]
+    },
+    "sidebarNavigation": {
+      "menus": [
+        {
+          "name": "default",
+          "active": false,
+          "items": null
+        },
+        {
+          "name": "loggedIn",
+          "active": false,
+          "items": null
+        }
+      ],
+      "menuSelectionConfig": {
+        "testURL": null,
+        "redirectLocations": [
+          {
+            "regex": null,
+            "menuName": "default",
+            "loggedIn": false
+          },
+          {
+            "regex": ".*",
+            "menuName": "default",
+            "loggedIn": true
+          }
+        ]
+      }
+    },
+    "tabNavigation": {
+      "tabMenus": [
+        {
+          "id": "1",
+          "items": [
+            {
+              "subLinks": []
+            }
+          ]
+        }
+      ],
+      "tabSelectionConfig": [
+        {
+          "id": "1",
+          "regex": ""
+        }
+      ]
+    },
+    "iosPullToRefresh": true,
+    "androidPullToRefresh": false
+  },
+  "general": {
+    "userAgentAdd": "gonative",
+    "useWKWebView": true,
+    "enableWindowOpen": true,
+    "useCrosswalkWebView": false,
+    "forceScreenOrientation": null,
+    "initialUrl": "http://appboy.com",
+    "appName": "Appboy Test Build 01",
+    "publicKey": "blkplm",
+    "deviceRegKey": "8qwvdr2rcvc8pw9g2m30c66u1w",
+    "replaceStrings": [],
+    "userAgentRegexes": []
+  }
+}
